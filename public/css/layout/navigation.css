@@ -1,0 +1,14 @@
+/* Navigation styles */
+.nav-gradient {
+  background: linear-gradient(to right, var(--primary) 0%, var(--accent) 100%);
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}

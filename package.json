@@ -1,0 +1,27 @@
+{
+  "name": "software-store",
+  "version": "1.0.0",
+  "description": "متجر متخصص في بيع المنتجات البرمجية",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-mysql-session": "^3.0.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "mysql2": "^3.6.5",
+    "nodemailer": "^6.9.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

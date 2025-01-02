@@ -1,0 +1,32 @@
+/* Custom styles */
+:root {
+  --primary: #4F46E5;
+  --primary-dark: #4338CA;
+  --secondary: #7C3AED;
+  --accent: #9333EA;
+  --success: #059669;
+  --background: #F8FAFC;
+  --text: #1E293B;
+}
+
+/* Rest of the existing styles remain the same */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.nav-gradient {
+  background: linear-gradient(to right, var(--primary) 0%, var(--accent) 100%);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}

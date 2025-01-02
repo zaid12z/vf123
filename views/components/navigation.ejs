@@ -1,0 +1,50 @@
+<nav class="nav-gradient text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0 fade-in">
+                <a href="/" class="text-xl font-bold">VF1 Dev</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="menu-item nav-link">Home</a>
+                <a href="/products" class="menu-item nav-link">Products</a>
+                <a href="/free" class="menu-item nav-link">Free</a>
+                <a href="/about" class="menu-item nav-link">About</a>
+                <a href="/contact" class="menu-item nav-link">Contact</a>
+            </div>
+
+            <!-- Auth & Cart -->
+            <div class="flex items-center space-x-4">
+                <!-- Auth Buttons -->
+                <div class="flex items-center space-x-2" data-auth-buttons>
+                    <a href="/auth/login" class="nav-link hover:text-gray-200">Login</a>
+                    <a href="/auth/register" class="bg-white text-indigo-600 px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">Sign Up</a>
+                </div>
+
+                <!-- User Menu (hidden by default) -->
+                <div class="hidden relative" data-user-menu>
+                    <button class="flex items-center space-x-2 nav-link" id="userMenuButton">
+                        <span class="username"></span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50" id="userMenu">
+                        <a href="/profile" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
+                        <button data-logout-button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Sign Out</button>
+                    </div>
+                </div>
+
+                <!-- Cart Icon -->
+                <button id="cartButton" class="button-animate nav-link flex items-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <span id="cartCount" class="bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

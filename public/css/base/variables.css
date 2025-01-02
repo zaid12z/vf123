@@ -1,0 +1,10 @@
+/* Base variables */
+:root {
+  --primary: #000000;
+  --primary-dark: #1a1a1a;
+  --secondary: #333333;
+  --accent: #4a4a4a;
+  --success: #2d2d2d;
+  --background: #ffffff;
+  --text: #000000;
+}
