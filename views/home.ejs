@@ -1,49 +1,0 @@
-<%- include('layout/header') %>
-
-<main class="max-w-6xl mx-auto px-4 py-8">
-    <section class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-gray-800 mb-4">أفضل المنتجات البرمجية</h1>
-        <p class="text-gray-600">اكتشف مجموعتنا المميزة من الحلول البرمجية المتكاملة</p>
-    </section>
-
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <% products.forEach(product => { %>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="<%= product.image %>" alt="<%= product.name %>" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2"><%= product.name %></h2>
-                    <p class="text-gray-600 mb-4"><%= product.description %></p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-blue-600">$<%= product.price %></span>
-                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                            إضافة للسلة
-                        </button>
-                    </div>
-                </div>
-            </div>
-        <% }) %>
-    </section>
-
-    <section class="mt-16 bg-blue-50 rounded-lg p-8">
-        <h2 class="text-3xl font-bold text-center mb-8">لماذا تختارنا؟</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center">
-                <div class="text-4xl mb-4">🔒</div>
-                <h3 class="text-xl font-semibold mb-2">حماية وأمان</h3>
-                <p class="text-gray-600">منتجات آمنة وموثوقة مع دعم فني متواصل</p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">⚡</div>
-                <h3 class="text-xl font-semibold mb-2">أداء عالي</h3>
-                <p class="text-gray-600">برمجيات مطورة بأحدث التقنيات</p>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl mb-4">💎</div>
-                <h3 class="text-xl font-semibold mb-2">جودة عالية</h3>
-                <p class="text-gray-600">منتجات مختبرة ومضمونة الجودة</p>
-            </div>
-        </div>
-    </section>
-</main>
-
-<%- include('layout/footer') %>
